@@ -17,7 +17,7 @@ def main():
         )
 
         # Train model
-        n_estimators = int(os.environ.get("N_ESTIMATORS", 100))
+        n_estimators = int(os.environ.get("N_ESTIMATORS", 1))
         clf = RandomForestClassifier(n_estimators=n_estimators, random_state=42)
         clf.fit(X_train, y_train)
 
