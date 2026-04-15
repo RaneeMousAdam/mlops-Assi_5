@@ -7,7 +7,6 @@ THRESHOLD = 0.85
 def main():
     mlflow.set_tracking_uri(os.environ["MLFLOW_TRACKING_URI"])
 
-    # Read the Run ID exported by train.py
     with open("model_info.txt", "r") as f:
         run_id = f.read().strip()
 
